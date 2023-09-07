@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import HTTPPost from './components/HTTPPost';
-import HTTPRequests from './components/HTTPRequests';
+import HTTPHooks from './components/HTTPHooks';
+
 // import FunctionalGreeting from './components/FunctionalGreeting';
 // import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
 // import StatefulGreeting from './components/StatefulGreeting';
@@ -29,6 +29,8 @@ import HTTPRequests from './components/HTTPRequests';
 // import UseStateWithObjects from './components/UseStateWithObjects';
 // import UseEffectCounter from './components/UseEffectCounter';
 // import UseEffectCounterContainer from './components/UseEffectCounterContainer';
+// import HTTPPost from './components/HTTPPost';
+// import HTTPRequests from './components/HTTPRequests';
 
 function App() {
   return (
@@ -60,7 +62,8 @@ function App() {
       {/* <UseEffectCounter /> */}
       {/* <UseEffectCounterContainer /> */}
       {/* <HTTPRequests /> */}
-      <HTTPPost />
+      {/* <HTTPPost /> */}
+      <HTTPHooks />
     </div>
   );
 }
