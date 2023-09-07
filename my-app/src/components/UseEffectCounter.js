@@ -4,6 +4,7 @@ function UseEffectCounter() {
 
   const [count, setCount] = useState(0);
   const [count2, setCount2] = useState(0);
+  const [time, setTime] = useState(0);
 
   useEffect(() => {
     console.log('count 1 effect')
@@ -14,6 +15,13 @@ function UseEffectCounter() {
     console.log('count 2 effect')
     document.title = count2;
   }, [count2]); // Specify which parameter to be updated
+
+  useEffect(() => {
+    console.log('Creating timer');
+    const interval = setInterval(() => {
+      setTime(time => time + 1)
+    }, 1000);
+  }, []); // Specifies that the affect only runs once by entering an empty parameter
 
   return (
     <div>
@@ -29,6 +37,7 @@ function UseEffectCounter() {
       }>
           Increment Count ({count2})
       </button>
+      <h2>Time is {time}</h2>
     </div>
   )
 }
