@@ -23,6 +23,9 @@ import SearchBar from './components/SearchBar';
 import ClassCounter from './components/ClassCounter';
 import HooksCounter from './components/HooksCounter';
 import ControlledFormHooks from './components/ControlledFormHooks';
+import UseStateWithArrays from './components/UseStateWithArrays';
+import UseStateWithObjects from './components/UseStateWithObjects';
+import UseEffectCounter from './components/UseEffectCounter';
 
 function App() {
   return (
@@ -48,7 +51,10 @@ function App() {
       {/* <SearchBar /> */}
       {/* <HooksCounter /> */}
       {/* <ClassCounter /> */}
-      <ControlledFormHooks />
+      {/* <ControlledFormHooks /> */}
+      {/* <UseStateWithArrays /> */}
+      {/* <UseStateWithObjects /> */}
+      <UseEffectCounter />
     </div>
   );
 }
