@@ -19,8 +19,13 @@ function UseEffectCounter() {
   useEffect(() => {
     console.log('Creating timer');
     const interval = setInterval(() => {
+      console.log('Interval executed')
       setTime(time => time + 1)
     }, 1000);
+    return () => { // Add return on the timer useEffect to clear interval and unmount 
+      console.log('Cleaning up!')
+      clearInterval(interval)
+    }
   }, []); // Specifies that the affect only runs once by entering an empty parameter
 
   return (
